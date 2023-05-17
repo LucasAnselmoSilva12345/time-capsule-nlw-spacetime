@@ -1,7 +1,7 @@
 export default function Copyright() {
   return (
     <div className="text-sm leading-relaxed text-gray-200">
-      Feito com 💜 no NLW da{" "}
+      Made with 💜 at{" "}
       <a
         target="_blank"
         rel="noreferrer"
