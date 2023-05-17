@@ -1,14 +1,21 @@
+import LeftSection from "./components/LeftSection";
+
 export default function Home() {
   return (
-    <section className="flex h-screen w-full flex-1 flex-col items-center justify-center gap-4 bg-zinc-950">
-      <h1 className="text-6xl font-bold text-zinc-50">Your Time Capsule</h1>
-      <h1 className=" font-second text-6xl font-bold text-zinc-50">
-        Your Time Capsule
-      </h1>
-      <p className="text-base text-zinc-400">
-        Collect memorable moments from your journey and share (if you like) with
-        the world!
-      </p>
-    </section>
+    <main className="grid min-h-screen grid-cols-2">
+      <LeftSection />
+
+      <section className="flex flex-col bg-[url(../assets/bg-stars.svg)] bg-cover p-16">
+        <div className="flex flex-1 items-center justify-center">
+          <p className="w-[360px] text-center leading-relaxed">
+            Você ainda não registrou nenhuma lembrança, comece a{" "}
+            <a href="#" className="underline hover:text-gray-50">
+              criar agora
+            </a>
+            !
+          </p>
+        </div>
+      </section>
+    </main>
   );
 }
