@@ -1,5 +1,6 @@
 import Image from "next/image";
 import bgLogoNLWSpacetime from "../assets/bg-logo-nlw-spacetime.svg";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -16,12 +17,12 @@ export default function Hero() {
         </p>
       </div>
 
-      <a
-        href="#"
+      <Link
+        href="/memories/new"
         className="inline-block rounded-full bg-green-500 px-5 py-3 font-second text-sm uppercase leading-none text-black hover:bg-green-600"
       >
         REGISTER MEMORIES
-      </a>
+      </Link>
     </div>
   );
 }

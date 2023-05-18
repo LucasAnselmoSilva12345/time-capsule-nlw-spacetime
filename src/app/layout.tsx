@@ -4,6 +4,8 @@ import {
   Bai_Jamjuree as BaiJamjuree,
 } from "next/font/google";
 
+import LeftSection from "@/components/LeftSection";
+
 const roboto = Roboto({ subsets: ["latin"], variable: "--font-roboto" });
 const baiJamjuree = BaiJamjuree({
   subsets: ["latin"],
@@ -26,7 +28,13 @@ export default function RootLayout({
       <body
         className={`${roboto.variable} ${baiJamjuree.variable} bg-gray-900 font-primary text-gray-100`}
       >
-        {children}
+        <main className="grid min-h-screen grid-cols-2">
+          <LeftSection />
+
+          <section className="flex flex-col bg-[url(../assets/bg-stars.svg)] bg-cover p-16">
+            {children}
+          </section>
+        </main>
       </body>
     </html>
   );
