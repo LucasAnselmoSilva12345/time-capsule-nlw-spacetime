@@ -1,6 +1,6 @@
 import Blur from "@/components/Blur";
 import Copyright from "@/components/Copyright";
-import HeroSection from "@/components/HeroSection";
+import Hero from "@/components/Hero";
 import SignIn from "@/components/SignIn";
 import Stripes from "@/components/Stripes";
 
@@ -10,7 +10,7 @@ export default function LeftSection() {
       <Blur />
       <Stripes />
       <SignIn />
-      <HeroSection />
+      <Hero />
       <Copyright />
     </section>
   );

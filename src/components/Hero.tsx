@@ -1,7 +1,7 @@
 import Image from "next/image";
 import bgLogoNLWSpacetime from "../assets/bg-logo-nlw-spacetime.svg";
 
-export default function HeroSection() {
+export default function Hero() {
   return (
     <div className="space-y-5">
       <Image src={bgLogoNLWSpacetime} alt="NLW Spacetime logo" />
