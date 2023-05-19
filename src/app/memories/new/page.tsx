@@ -42,7 +42,7 @@ export default function NewMemory() {
           name="content"
           spellCheck={false}
           className="w-full flex-1 resize-none rounded border-0 bg-transparent p-0 text-lg leading-relaxed text-gray-100 placeholder:text-gray-400 focus:ring-0"
-          placeholder="What's on your mind?"
+          placeholder="Register with photos or movies your memories of this day"
         />
       </form>
     </div>
